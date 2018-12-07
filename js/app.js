@@ -1,84 +1,133 @@
-const Portfolio = function() {
-	function makeWords() {
-		var words = [
-			{
-				text: "rapping",
-				weight: 12.3
-			}, {
-				text: "css3",
-				weight: 8
-			}, {
-				text: "javascript",
-				weight: 14
-			}, {
-				text: "jquery",
-				weight: 3
-			}, {
-				text: "programming",
-				weight: 7
-			}, {
-				text: "python",
-				weight: 10
-			}, {
-				text: "java",
-				weight: 9
-			}, {
-				text: "qazi",
-				weight: 15
-			}, {
-				text: "newText",
-				weight: 7
-			}
-		];
-		return words;
-	}
+/* -----------------------------------------------
+/* How to use? : Check the GitHub README
+/* ----------------------------------------------- */
 
-	function makeWordCloud(words) {
-		$('.teaching-domains').jQCloud(words, {delay: 120});
-	}
+/* To load a config file (particles.json) you need to host this demo (MAMP/WAMP/local)... */
+/*
+particlesJS.load('particles-js', 'particles.json', function() {
+  console.log('particles.js loaded - callback');
+});
+*/
 
-	function displayWordCloud() {
-		var count = 1;
-		$(window).on('scroll', function() {
-			var y_scroll_pos = window.pageYOffset;
-			var scroll_pos_test = 2700; // set to whatever you want it to be
-			var words = makeWords();
-			if (y_scroll_pos > scroll_pos_test && count <= 1) {
-				makeWordCloud(words);
-				count++;
-			}
-		});
-	}
+/* Otherwise just put the config content (json): */
 
-	function designForm() {
-		$("#my-modal form").addClass("my-form");
-	}
+particlesJS('particles-js',
+  
+  {
+    "particles": {
+      "number": {
+        "value": 50,
+        "density": {
+          "enable": true,
+          "value_area": 800
+        }
+      },
+      "color": {
+        "value": "#888"
+      },
+      "shape": {
+        "type": "circle",
+        "stroke": {
+          "width": 0,
+          "color": "#888"
+        },
+        "polygon": {
+          "nb_sides": 5
+        },
+        "image": {
+          "src": "img/github.svg",
+          "width": 100,
+          "height": 100
+        }
+      },
+      "opacity": {
+        "value": 0.5,
+        "random": false,
+        "anim": {
+          "enable": false,
+          "speed": 3,
+          "opacity_min": 0.1,
+          "sync": false
+        }
+      },
+      "size": {
+        "value": 5,
+        "random": true,
+        "anim": {
+          "enable": false,
+          "speed": 40,
+          "size_min": 0.1,
+          "sync": false
+        }
+      },
+      "line_linked": {
+        "enable": true,
+        "distance": 150,
+        "color": "#888",
+        "opacity": 0.4,
+        "width": 1
+      },
+      "move": {
+        "enable": true,
+        "speed": 6,
+        "direction": "none",
+        "random": false,
+        "straight": false,
+        "out_mode": "out",
+        "attract": {
+          "enable": false,
+          "rotateX": 600,
+          "rotateY": 1200
+        }
+      }
+    },
+    "interactivity": {
+      "detect_on": "canvas",
+      "events": {
+        "onhover": {
+          "enable": true,
+          "mode": "repulse"
+        },
+        "onclick": {
+          "enable": true,
+          "mode": "push"
+        },
+        "resize": true
+      },
+      "modes": {
+        "grab": {
+          "distance": 400,
+          "line_linked": {
+            "opacity": 1
+          }
+        },
+        "bubble": {
+          "distance": 400,
+          "size": 40,
+          "duration": 2,
+          "opacity": 8,
+          "speed": 3
+        },
+        "repulse": {
+          "distance": 200
+        },
+        "push": {
+          "particles_nb": 4
+        },
+        "remove": {
+          "particles_nb": 2
+        }
+      }
+    },
+    "retina_detect": true,
+    "config_demo": {
+      "hide_card": false,
+      "background_color": "#b61924",
+      "background_image": "",
+      "background_position": "50% 50%",
+      "background_repeat": "no-repeat",
+      "background_size": "cover"
+    }
+  }
 
-	function typeAnimation() {
-		Typed.new("#writing-text", {
-			strings: [
-				"Design", "Development", "Consulting", "Toronto's #1 Digital Marketing Firm"
-			],
-			// Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
-			stringsElement: null,
-			// typing speed
-			typeSpeed: 1,
-			contentType: 'text',
-			callback: function() {
-				$("#writing-text").css({"color": "#fff", "background-color": "#52b0ff"});
-			},
-			preStringTyped: function() {},
-			onStringTyped: function() {}
-		});
-	}
-
-	return {
-		displayWordCloud: displayWordCloud,
-		typeAnimation: typeAnimation
-	}
-
-}();
-
-
-Portfolio.displayWordCloud();
-Portfolio.typeAnimation();
+);

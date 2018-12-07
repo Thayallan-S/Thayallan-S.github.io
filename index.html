@@ -1,876 +1,445 @@
-<!DOCTYPE HTML>
-<html lang="en-US">
+<!doctype html>
+
+<html class="no-js" lang="zxx">
+
     <head>
-        <title>TMDevs- A Toronto Based Web Development, Web Design, and Business Consulting Firm</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta name="description" content="Template by CocoBasic" />
-        <meta name="keywords" content="HTML, CSS, JavaScript, PHP" />
-        <meta name="author" content="CocoBasic" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-            <script src="js/jquery.min.js" charset="utf-8"></script>
+    	<!-- metas -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+       	<meta name="description" content="Daniels is a responsive creative template">
+		<meta name="keywords" content="portfolio, personal, corporate, business, parallax, creative, agency">
 
-        <link rel="shortcut icon" href="images/favicon.ico" />    
-        <link href='http://fonts.googleapis.com/css?family=Poppins:100,200,300,400,400i,500,600,700%7CMontserrat:700' rel='stylesheet' type='text/css'>		
+		<!-- title -->
+		<title>Thayallan S.</title>
 
-        <script src="js/typed.min.js" charset="utf-8"></script>
-        <link rel="stylesheet" type="text/css"  href='style.css' />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+		<!-- favicon -->
+        <link href="img/favicon.ico" rel="icon" type="image/png">
 
-        <!--[if lt IE 9]>
-                <script src="js/html5shiv.js"></script>            
-                <script src="js/respond.min.js"></script>                   
-        <![endif]-->         
+        <!-- bootstrap css -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+
+		<!-- google fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800,900" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800" rel="stylesheet">
+
+		<!-- owl carousel CSS -->
+		<link rel="stylesheet" href="css/owl.carousel.min.css">
+		<link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+		<!-- magnific-popup CSS -->
+		<link rel="stylesheet" href="css/magnific-popup.css">
+
+		<!-- animate.min CSS -->
+		<link rel="stylesheet" href="css/animate.min.css">
+
+		<!-- Font Icon Core CSS -->
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/et-line.css">
+
+		<!-- Core Style Css -->
+        <link rel="stylesheet" href="css/style.css">
+
+        <!--[if lt IE 9]-->
+		<script src="js/html5shiv.min.js"></script>
+		<!--[endif]-->
+
     </head>
+    
+    <body>
 
-    <body class="page-template-onepage">
+    	<!-- ====== Preloader ======  -->
+	    <div class="loading">
+			<div class="load-circle">
+			</div>
+		</div>
+		<!-- ======End Preloader ======  -->
 
-        <div class="site-wrapper">   
+		<!-- ====== Navgition ======  -->
+		<nav class="navbar navbar-default">
+		  <div class="container">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-icon-collapse" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
 
-            <div class="doc-loader">
-                <img src="images/preloader.gif" alt="Cardea">
-            </div>       
+		       <!-- logo -->
+		      <a class="logo" href="#">Thayallan.</a>
 
+		    </div>
 
-            <header class="header-holder">             
-                <div class="menu-wrapper center-relative relative">             
-                    <div class="header-logo">
-                        <a href="index.html">
-                            <img src="images/topleftlogo.jpg" alt="Cardea" style="width: 600px; height: 78px">
-                        </a>               
-                    </div>
+		    <!-- Collect the nav links, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="nav-icon-collapse">
+		      
+			  <!-- links -->
+		      <ul class="nav navbar-nav navbar-right">
+		        <li><a href="#" data-scroll-nav="0" class="active">Home</a></li>
+		        <li><a href="#" data-scroll-nav="1">About</a></li>
+		        <li><a href="#" data-scroll-nav="2">Skills</a></li>
+		        <li><a href="#" data-scroll-nav="3">Portfolio</a></li>
+		        <li><a href="#" data-scroll-nav="4">Contact</a></li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container -->
+		</nav>
+		<!-- ====== End Navgition ======  -->
 
-                    <div class="toggle-holder">
-                        <div id="toggle" class="">
-                            <div class="first-menu-line"></div>
-                            <div class="second-menu-line"></div>
-                            <div class="third-menu-line"></div>
-                        </div>
-                    </div>
+		<!-- ====== Header ======  -->
+		<section id="home" class="header" data-scroll-index="0" style="background-image: url(img/bg.jpg);" data-stellar-background-ratio="0.8">
 
-                    <div class="menu-holder">
-                        <nav id="header-main-menu">
-                            <ul class="main-menu sm sm-clean">
-                                <li>
-                                    <a href="#home">Home</a>
-                                </li>
-                                <li>
-                                    <a href="#services">Services</a>
-                                </li>
-                                <li>
-                                    <a href="#portfolio">Portfolio</a>
-                                </li>
-                                <li>
-                                    <a href="#inspire">Inspire</a>
-								</li>
-                                <li>
-                                    <a href="#skills">Skills</a>
-                                </li>                                                                
-                                <li>
-                                    <a href="#contact">Contact</a>
-                                </li>                                
-                            </ul>
-                        </nav>                       
-                    </div>
-                    <div class="clear"></div>   
-                </div>
-            </header>                        
+			<!-- particles -->
+			<div id="particles-js"></div>
 
+			<div class="v-middle">
+				<div class="container">
+					<div class="row">
 
+						<!-- caption -->
+						<div class="caption">
+							<h5>Thayallan Srinathan</h5>
+							<h1 class="cd-headline clip">
+								<span class="cd-words-wrapper">
+					              <b class="is-visible">iOS Developer</b>
+								  <b>Blockchain Developer</b>
+								  <b>IoT Enthusiast</b>
+					            </span>
+			          		</h1>
 
-            <div id="content" class="site-content center-relative">
+			          		<!-- social icons -->
+			          		<div class="social-icon">
+			          			<a href="https://www.linkedin.com/in/thayallan-srinathan-b80953162/">
+			          				<span><i class="fa fa-linkedin" aria-hidden="true"></i></span>
+			          			</a>
+			          			<a href="https://github.com/thayallan-s">
+			          				<span><i class="fa fa-github" aria-hidden="true"></i></span>
+			          			</a>
+			          			<a href="https://medium.com/@thayallan.srinathan">
+			          				<span><i class="fa fa-medium" aria-hidden="true"></i></span>
+			          			</a>
+			          		</div>
+						</div>
+						<!-- end caption -->
+					</div>
+				</div><!-- /row -->
+			</div><!-- /container -->
+		</section>
+		<!-- ====== End Header ======  -->
 
-                <!-- Home -->    
-                <div id="home" class="section full-screen full-width">
-                    <div class="section-wrapper block content-1170 center-relative">
-                        <div class="content-wrapper">
-                        <div class = "animated flip delay-5s">
-                            <img src="images/YYZDesignsLogo.png"  style="width:400px !important;height:400px !important;" alt="" class="center-relative block">
-                        </div>
-                            <h1 class="big-text center">
-								YYZdesigns: <span id = "writing-text"></span>
-                            </h1>
+		<!-- ====== Hero ======  -->
+		<section class="hero section-padding pb-70" data-scroll-index="1">
+			<div class="container">
+				<div class="row">
 
-                        </div>
-                    </div>
-                </div>
+					<!-- hero image -->
+					<div class="col-md-5">
+						<div class="hero-img mb-30">
+							<img src="img/hero.jpg" alt="">
+						</div>
+					</div>
 
-                <!-- Services --> 
-                <div id="services" class="section page-split">
-                    <div class="section-wrapper block content-1170 center-relative">
-                        <div class="bg-holder float-left">
-                            <div class="split-color"></div>                                
-                        </div>
-                        <div class="sticky-spacer">
-                            <div class="section-title-holder float-left">
-                                <div class="section-top-image"> 
-                                    <img src="images/01_left.png" alt="">
-                                </div>
-                                <h2 class="entry-title">
-                                    WHAT <br>
-                                    WE <br>
-                                    DO
-                                </h2>
-                                <p class="page-desc">
-                                    Our modest <br>
-                                    list of services
-                                </p>
-                            </div>
-                        </div>   
+					<!-- content -->
+					<div class="col-md-7">
+						<div class="content mb-30">
+							<h3>About Me.</h3>
+							<p><b>I am Thayallan, a 18-year old who is passionate about creating change in the world using innovative technologies.</b> 
+								<br>
+								<br>
+								I am a curious innovator who is passionate about disruptive technologies such as Blockchain, Machine Learning and Quantum Computing! Currently, I am working at a event creation startup as an iOS Developer. I sepdn my weekends heading out to hackathons and various other events to learn and practice honing my skills. I am always looking for opportunities on how to solve a complex problem using disruptive technologies. Connect with me on LinkedIn, Checkout some of my cool projects on Github or read my articles on Medium!</p>
 
-                        <div class="section-content-holder float-right">
-                            <div class="content-wrapper">
-                                <div class="info-text">Our modest list of services to <br> suit all your digital needs</div>
-                                <p>&nbsp;</p>
+							<a href= "https://www.linkedin.com/in/thayallan-srinathan-b80953162/">
+								<span class="buton">LinkedIn <i class="fa fa-linkedin" aria-hidden="true"></i></span>
+							</a>
+							<a href= "https://github.com/thayallan-s">
+								<span class="buton">Github <i class="fa fa-github" aria-hidden="true"></i></span>
+							</a>
+							<a href= "https://medium.com/@thayallan.srinathan">
+								<span class="buton">Medium <i class="fa fa-medium" aria-hidden="true"></i></span>
+							</a>
+							
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div><!-- /row -->
+			</div><!-- /container -->
+		</section>
+		<!-- ====== End Hero ======  -->
 
-                                <div class="one_half animate">
-                                    <div class="service-holder">
-                                        <div class="service-img"> 
-                                            <img src="images/icon_preciese.png" alt="">
-                                        </div>
-                                        <div class="service-txt">
-                                            <h4>Development</h4> 
-                                            We create custom websites to suit your needs and specifications
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="one_half last animate">
-                                    <div class="service-holder">
-                                        <div class="service-img">
-                                            <img src="images/icon_support.png" alt="">
-                                        </div>
-                                        <div class="service-txt">
-                                            <h4>Design</h4> 
-                                            We offer custom designs to embelish your business
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="clear"></div>
-
-                                <div class="one_half animate">
-                                    <div class="service-holder">
-                                        <div class="service-img">
-                                            <img src="images/icon_responsive.png" alt="">
-                                        </div>
-                                        <div class="service-txt">
-                                            <h4>Responsive</h4> 
-                                            We create responsive websites that work on your laptop, tablet as well as you phone
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="one_half last animate">
-                                    <div class="service-holder">
-                                        <div class="service-img"> 
-                                            <img src="images/icon_community.png" alt="">
-                                        </div>
-                                        <div class="service-txt">
-                                            <h4>Consulting</h4> 
-                                            We look at your companies need and contour a business plan to ensure your companies success
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="clear"></div>
-
-                                <div class="one_half animate">
-                                    <div class="service-holder">
-                                        <div class="service-img"> 
-                                            <img src="images/icon_portfolio.png" alt="">
-                                        </div>
-                                        <div class="service-txt">
-                                            <h4>Portfolio</h4> 
-                                            Our previous work is a testament to our ability and we are always adding to our own porfolio!
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="one_half last animate">
-                                    <div class="service-holder">
-                                        <div class="service-img">
-                                            <img src="images/icon_store.png" alt="">
-                                        </div>
-                                        <div class="service-txt">
-                                            <h4>Store</h4> 
-                                            We are also able to create e-commerce websites that will take your business from the local coffee shop to a national level
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="clear"></div>
-                            </div>                                                           
-                        </div>                                
-                        <div class="clear"></div> 
-                    </div>
-                </div>
-
-                <!-- Portfolio --> 
-                <div id="portfolio" class="section page-split">
-                    <div class="section-wrapper block content-1170 center-relative">
-                        <div class="bg-holder float-left">
-                            <div class="split-color"></div>                                   
-                        </div>
-                        <div class="sticky-spacer">
-                            <div class="section-title-holder float-left portfolio-title-fix-class">
-                                <div class="section-top-image"> 
-                                    <img src="images/02_left.png" alt="">
-                                </div>
-                                <h2 class="entry-title"> 
-                                    PORT<br>FOL<br>IO
-                                </h2>
-                                <p class="page-desc"> 
-                                    Check our <br>
-                                    recent work
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="section-content-holder float-right">
-                            <div class="content-wrapper">
-                                <div id="portfolio-wrapper">
-                                    <div class="portfolio-load-content-holder"></div>
-                                    <div class="grid" id="portfolio-grid">                                            
-                                        <div class="grid-sizer"></div>                                            
-
-                                        <div id="p-item-1" class="grid-item element-item p_one">
-                                            <a class="item-link ajax-portfolio" href="assalaminstitute.ca" data-id="1">
-                                                <img src="images/AIQ.jpg" alt="" >
-                                                <div class="portfolio-text-holder">
-                                                    <p class="portfolio-title">Assalam Institute of Quraan</p>
-                                                    
-                                                </div>
-                                            </a>
-                                        </div>
-
-                                        <div id="p-item-1" class="grid-item element-item p_one">
-                                            <a class="item-link ajax-portfolio" href="assalaminstitute.ca" data-id="1">
-                                                <img src="images/BlueOceanNails.jpg" alt="" >
-                                                <div class="portfolio-text-holder">
-                                                    <p class="portfolio-title">Blue Ocean Nails and Spa</p>
-                                                    
-                                                </div>
-                                            </a>
-                                        </div>
-                                       
-
-                                        <div id="p-item-1" class="grid-item element-item p_one">
-                                            <a class="item-link ajax-portfolio" href="assalaminstitute.ca" data-id="1">
-                                                <img src="images/WFP.jpg" alt="" >
-                                                <div class="portfolio-text-holder">
-                                                    <p class="portfolio-title">World Famous Pizza</p>
-                                                    
-                                                </div>
-                                            </a>
-                                        </div>
+		<!-- ====== Services ======  -->
+		<section class="services section-padding bg-gray text-center pb-70" data-scroll-index="2">
+			<div class="container">
+				
+					<!-- section heading -->
+					<div class="section-head">
+						<h3>Skills</h3>
+					</div>
+					
+				<div class="row">
 
 
+					<!-- items -->
+					<div class="col-md-4">
+						<div class="item">
+							<span class="icon"><i class="fa fa-laptop" aria-hidden="true"></i></span>
+							<h6>iOS Development</h6>
+							<p>Knowledgable in building iOS applications with Swift 4 and above. Experienced with using tools such as ARKit and etc.</p>
+						</div>
+					</div>
+					
+					<div class="col-md-4">
+						<div class="item">
+							<span class="icon"><i class="fa fa-diamond" aria-hidden="true"></i></span>
+							<h6>UI/UX Design</h6>
+							<p>Experienced with Sketch, Invision, Atomic and other tools used for UI/UX Design</p>
+						</div>
+					</div>
+	
+					<div class="col-md-4">
+						<div class="item">
+							<span class="icon"><i class="fa fa-television" aria-hidden="true"></i></span>
+							<h6>Backend Development</h6>
+							<p>Experienced with languages such as Java, Python, Ruby and frameworks such as Django and Ruby On Rails. Built out backends to coincide with iOS applications</p>
+						</div>
+					</div>
+				</div><!-- /row -->
+			</div><!-- /container -->
+		</section>
+		<!-- ====== End Services ======  -->
+
+		<!--====== Portfolio ======-->
+		<section class="portfolio section-padding pb-70" data-scroll-index="3">
+			<div class="container">
+				<div class="row">
+
+					<!-- section heading -->
+					<div class="section-head">
+						<h3>Portfolio.</h3>
+					</div>
+
+					<!-- filter links -->
+					<div class="filtering text-center mb-50">
+						<span data-filter='*' class="active">All</span>
+						<span data-filter='.projects'>Projects</span>
+						<span data-filter='.articles'>Articles</span>
+						<span data-filter='.other'>Other</span>
+					</div>
+
+					<!-- gallery -->
+					<div class="gallery text-center">
+
+						<!-- gallery item -->
+						<div class="col-md-4 col-sm-6 items projects">
+							<div class="item-img">
+								<img src="img/portfolio/hotspot.png" alt="image">
+								<div class="item-img-overlay">
+									<div class="overlay-info v-middle text-center">
+										<h6>Project</h6>
+										<h3 class="sm-titl">Hotspot</h3>
+										<h5>Top 5 Overall at BlockHacks</h5>
+										<h5>Presented at Crypto Camp</h5>
+										<div class="icons">
+											<span class="icon">
+												<a href="https://github.com/Thayallan-S/hotspot">
+													<i class="fa fa-chain" aria-hidden="true"></i>
+												</a>
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- gallery item -->
+						<div class="col-md-4 col-sm-6 items projects">
+							<div class="item-img">
+								<img src="img/portfolio/noize.JPG" alt="image">
+								<div class="item-img-overlay">
+									<div class="overlay-info v-middle text-center">
+										<h6>Project</h6>
+										<h3 class="sm-titl">Noize</h3>
+										<h5>1st Place at UTSC Hack Day</h5>
+										<h5>Best UI Design at UTSC Hack Day</h5>
+										<div class="icons">
+											<span class="icon">
+												<a href="https://github.com/Thayallan-S/noize">
+													<i class="fa fa-chain" aria-hidden="true"></i>
+												</a>
+											</span>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- gallery item -->
+						<div class="col-md-4 col-sm-6 items projects">
+							<div class="item-img">
+								<img src="img/portfolio/chute.png" alt="image">
+								<div class="item-img-overlay">
+									<div class="overlay-info v-middle text-center">
+										<h6>Project</h6>
+										<h3 class="sm-titl">Chute</h3>
+										<h5>2nd Place at Electric City Hacks</h5>
+										<h5>Best IoT Hack</h5>
+										<div class="icons">
+											<span class="icon">
+												<a href="https://github.com/Thayallan-S/chute">
+													<i class="fa fa-chain" aria-hidden="true"></i>
+												</a>
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- gallery item -->
+						<div class="col-md-4 col-sm-6 items projects">
+							<div class="item-img">
+								<img src="img/portfolio/bunzprize.jpg" alt="image">
+								<div class="item-img-overlay">
+									<div class="overlay-info v-middle text-center">
+										<h6>Project</h6>
+										<h3 class="sm-titl">BunzCourt</h3>
+										<h5>3nd Place at UofT Blockfest</h5>
+										<h5>BUNZ Prize</h5>
+										<div class="icons">
+											<span class="icon">
+												<a href="https://github.com/Thayallan-S/BunzChallenge">
+													<i class="fa fa-chain" aria-hidden="true"></i>
+												</a>
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div><!-- /row -->
+			</div><!-- /container -->
+		</section>
+		<!--====== End Portfolio ======-->
 
 
+		<!--====== Contact ======-->
+		<section class="contact section-padding" data-scroll-index="4">
+			<div class="container">
+				<div class="row">
+					
+					<!-- section heading -->
+					<div class="section-head">
+						<h3>Contact Me.</h3>
+					</div>
 
-                                        
-                                    </div>
-                                    <div class="clear"></div>                                            
-                                </div>
-                                <div class="block center-relative center-text more-posts-portfolio-holder">
-                                    <a class="more-posts-portfolio">
-                                        <img src="images/icon_plus.png" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="clear"></div>                                
-                    </div>                            
-                </div>
+					<div class="col-md-offset-1 col-md-10">
 
-				<!---- WORK ON INSPIRE SECTION COME UP WITH THREE MAJOR POINTS -->
-                <!-- Inspire -->
-                <div id="inspire" class="section full-screen full-width">
-                    <div class="section-wrapper block content-1170 center-relative">
-                        <div class="content-wrapper">
-                            <script>
-                                var slider1_speed = "3000";
-                                var slider1_auto = "true";
-                                var slider1_hover = "true";                                
-                            </script>
-                            <div class="image-slider-wrapper relative">
-                                <div id="slider1" class="owl-carousel owl-theme image-slider slider">
-                                    <div class="owl-item">
-                                        <a href="#services" class="scroll">
-                                            <img src="images/img_01.png" alt="">
-                                        </a>
-                                    </div>
-									<!--
-                                    <div class="owl-item">
-                                        <a href="#team" class="scroll">
-                                            <img src="images/img_02.png" alt="">
-                                        </a>
-                                    </div>  -->                             
-                                    <div class="owl-item">
-                                        <a href="#contact" class="scroll">
-                                            <img src="images/img_03.png" alt="">
-                                        </a>
-                                    </div>
-                                </div>                                                            
-                            </div>
-                        </div>
-                    </div>
-                </div>
+						<!-- contact info -->
+						<div class="info text-center mb-50">
 
-<!--
-                <!-- About 
-                <div id="about" class="section page-split">
-                    <div class="section-wrapper block content-1170 center-relative">
-                        <div class="bg-holder float-right">
-                            <div class="split-color"></div>                                    
-                        </div>
-                        <div class="sticky-spacer">
-                            <div class="section-title-holder float-right">
-                                <div class="section-top-image">
-                                    <img src="images/03_right.png" alt="">
-                                </div>
-                                <h2 class="entry-title"> 
-                                    WHO <br>WE <br>ARE
-                                </h2>
-                                <p class="page-desc"> 
-                                    About our <br>
-                                    small company
-                                </p>
-                            </div>
-                        </div>
+							<div class="col-md-4">
+								<div class="item">
+									<span class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+									<h6>Email</h6>
+									<p>thayallan.srinathan@gmail.com</p>
+								</div>
+							</div>
 
-                        <div class="section-content-holder float-left">
-                            <div class="content-wrapper">
-                                <div class="info-text">
-                                    Two ghostly white figures in coveralls and helmets are soflty dancing. Shores of the cosmic ocean permanence of the stars.
-                                </div>
-                                <p>&nbsp;</p> 
-                                <a class="video-popup-holder" href="https://www.youtube.com/watch?v=15cpIHjEsWI" data-rel="prettyPhoto[gallery-video1]">
-                                    <img class="thumb" src="images/video_img.jpg" alt="">
-                                    <img class="popup-play" src="images/play_btn.png" alt="Play">
-                                </a>
-                                <p>&nbsp;</p>
+							<div class="col-md-4">
+								<div class="item">
+									<span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+									<h6>Phone</h6>
+									<p>647-228-3352</p>
+								</div>
+							</div>
+							
+							<div class="col-md-4">
+								<div class="item">
+									<span class="icon"><i class="fa fa-linkedin" aria-hidden="true"></i></span>
+									<h6>LinkedIn</h6>
+									<p>Thayallan Srinathan</p>
+								</div>
+							</div>
+							<br>
+							<br>
+							<br>
+							<br>
+							<br>
+							<br>
+							<br>
+							<br>
+							<br>
+							<br>
+							<br>
+							<br>
+							<br>
+							<br>
+							
+							
+							
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div><!-- /row -->
+			</div><!-- /container -->
+		</section>
+		<!--====== End Contact ======-->
 
-                                <div class="one_half">
-                                    <p>
-                                        <strong>As a patch of light. Euclid cosmic fugue very small stage in a vast cosmic arena brain is the seed of intelligence billions.</strong>
-                                    </p>
-                                    <p>&nbsp;</p>
-                                    <p>
-                                        Flatland! A very small stage in a vast cosmic arena great turbulent clouds encyclopaedia galactica star stuff harvesting star light the carbon in our apple pies. Realm of the galaxies, Cambrian explosion Flatland for tesserac
-                                    </p>
-                                </div>
-                                <div class="one_half last">
-                                    A very small stage in a vast cosmic arena great turbulent clouds encyclopaedia galactica star stuff harvesting star light the carbon in our apple pies. Realm of the galaxies, Cambrian explosion Flatland for tesseract hundreds of thousands, cosmic ocean. Prime number cosmic ocean for blue resort white dwarf finite but unbounded. A very small stage in a vast cosmic arena great turbulent clouds encyclopaedia galactica star stuff harvesting star light the carbon
-                                </div>
-                                <div class="clear"></div>                                       
-                            </div>                                   
-                        </div>
-                        <div class="clear"></div>                                
-                    </div>                            
-                </div>
+		<!--====== Footer ======-->
+		<footer>
+		</footer>
+		<!--====== End Footer ======-->
+
 
 
        
+        <!-- jQuery -->
+		<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+		<script src="https://code.jquery.com/jquery-migrate-3.0.0.min.js"></script>
 
-                <!-- Pricing 
-                <div id="pricing" class="section full-width">
-                    <div class="section-wrapper block content-1170 center-relative">
-                        <div class="content-wrapper">
-                            <div class="two_third">
-                                <div class="info-text"> 
-                                    Terre estere doloremique sei totames laudantium remeseo aperiam, eaque ipsa quae ab illo inventore veritatis
-                                </div>                                   
-                            </div>
-                            <div class="one_third last"> 
-                                Dolor lorem ipsu seti per se neque porro quisquam est, quister set dolorem per sei donec nulla est rete et quasi architecto beataes vitae dicta sunt
-                            </div>
-                            <div class="clear"></div>
+	  	<!-- bootstrap -->
+		<script src="js/bootstrap.min.js"></script>
 
-                            <div class="one_third">
-                                <div class="pricing-table">
-                                    <div class="pricing-table-header">
-                                        <div class="pricing-table-title pricing-orange">
-                                            BASIC
-                                        </div>                                           
-                                    </div>
-                                    <div class="pricing-table-price">$29</div>
-                                    <div class="pricing-table-desc">per month</div>
-                                    <div class="pricing-table-content-holder">
-                                        <ul>
-                                            <li>25 GB Storage</li>
-                                            <li>24/7 Support</li>
-                                            <li>Up to 50 Users</li>
-                                            <li>Donec Estu</li>
-                                            <li>Lorem Ipsum</li>
-                                        </ul>
-                                    </div>
-                                    <a href="#" class="pricing-button scroll">CHOOSE</a>
-                                </div>
-                            </div>
+		<!-- scrollIt -->
+		<script src="js/scrollIt.min.js"></script>
 
-                            <div class="one_third">
-                                <div class="pricing-table">
-                                    <div class="pricing-table-header">
-                                        <div class="pricing-table-title pricing-blue">
-                                            ADVANCED
-                                        </div>                                           
-                                    </div>
-                                    <div class="pricing-table-price">$59</div>
-                                    <div class="pricing-table-desc">per month</div>
-                                    <div class="pricing-table-content-holder">
-                                        <ul>
-                                            <li>25 GB Storage</li>
-                                            <li>24/7 Support</li>
-                                            <li>Up to 50 Users</li>
-                                            <li>Donec Estu</li>
-                                            <li>Lorem Ipsum</li>
-                                        </ul>
-                                    </div>
-                                    <a href="#" class="pricing-button scroll">CHOOSE</a>
-                                </div>
-                            </div>
-                            <div class="one_third last">
-                                <div class="pricing-table">
-                                    <div class="pricing-table-header">
-                                        <div class="pricing-table-title pricing-green">
-                                            EXPERT
-                                        </div>                                            
-                                    </div>
-                                    <div class="pricing-table-price">$99</div>
-                                    <div class="pricing-table-desc">per month</div>
-                                    <div class="pricing-table-content-holder">
-                                        <ul>
-                                            <li>25 GB Storage</li>
-                                            <li>24/7 Support</li>
-                                            <li>Up to 50 Users</li>
-                                            <li>Donec Estu</li>
-                                            <li>Lorem Ipsum</li>
-                                        </ul>
-                                    </div>
-                                    <a href="#" class="pricing-button scroll">CHOOSE</a>
-                                </div>
-                            </div>
-                            <div class="clear"></div>                               
-                        </div>
-                        <div class="clear"></div>                            
-                    </div>                       
-                </div>
--->
+		<!-- magnific-popup -->
+		<script src="js/jquery.magnific-popup.min.js"></script>
 
-                <!-- Skills -->
-                <div id="skills" class="section page-split">
-                    <div class="section-wrapper block content-1170 center-relative">
-                        <div class="bg-holder float-left">
-                            <div class="split-color"></div>                               
-                        </div>
-                        <div class="sticky-spacer">
-                            <div class="section-title-holder float-left">
-                                <div class="section-top-image"> 
-                                    <img src="images/05_left.png" alt="">
-                                </div>
-                                <h2 class="entry-title"> 
-                                    OUR <br>SKI<br>LLS
-                                </h2>
-                                <p class="page-desc">
-                                    Our <br>
-                                    competences
-                                </p>
-                            </div>
-                        </div>
-                        <div class="section-content-holder float-right">
-                            <div class="content-wrapper">
-                                <div class="info-text">
-                                    We pride ourself on our ability <br> 
-                                   and what we can provde to our clients
-                                </div>
-                                <p>&nbsp;</p>
+		<!-- owl carousel -->
+		<script src="js/owl.carousel.min.js"></script>
 
-                                <div class="skills-holder">
-                                    <div class="skill-holder">
-                                        <div class="skill-percent">100%</div>
-                                        <div class="skill-text">
-                                            <span>Design</span>
-                                            <div class="skill">
-                                                <div class="skill-fill" data-fill="100%"></div>                                                    
-                                            </div>                                               
-                                        </div>                                            
-                                    </div>
+		<!-- stellar js -->
+		<script src="js/jquery.stellar.min.js"></script>
 
-                                    <div class="skill-holder">
-                                        <div class="skill-percent">100%</div>
-                                        <div class="skill-text">
-                                            <span>Development</span>
-                                            <div class="skill">
-                                                <div class="skill-fill" data-fill="100%"></div>                                                   
-                                            </div>                                               
-                                        </div>                                            
-                                    </div>
+		<!-- animated.headline -->
+		<script src="js/animated.headline.js"></script>
 
-                                    <div class="skill-holder">
-                                        <div class="skill-percent">100%</div>
-                                        <div class="skill-text">
-                                            <span>Consulting</span>
-                                            <div class="skill">
-                                                <div class="skill-fill" data-fill="100%"></div>                                                   
-                                            </div>                                                
-                                        </div>                                            
-                                    </div>
+      	<!-- jquery.waypoints.min js -->
+	  	<script src="js/jquery.waypoints.min.js"></script>
 
-                                    <div class="skill-holder">
-                                        <div class="skill-percent">100%</div>
-                                        <div class="skill-text">
-                                            <span>Marketing</span>
-                                            <div class="skill">
-                                                <div class="skill-fill" data-fill="100%"></div>                                                   
-                                            </div>                                                
-                                        </div>                                            
-                                    </div>
+	  	<!-- jquery.counterup.min js -->
+	  	<script src="js/jquery.counterup.min.js"></script>
 
-                                    <div class="skill-holder">
-                                        <div class="skill-percent">100%</div>
-                                        <div class="skill-text">
-                                            <span>Customer Satisfaction</span>
-                                            <div class="skill">
-                                                <div class="skill-fill" data-fill="100%"></div>                                                    
-                                            </div>                                                
-                                        </div>                                            
-                                    </div>                                        
-                                </div>                                    
-                            </div>                                
-                        </div>
-                        <div class="clear"></div>                            
-                    </div>                        
-                </div>
+      	<!-- isotope.pkgd.min js -->
+      	<script src="js/isotope.pkgd.min.js"></script>
 
-                <!-- Team
-                <div id="team" class="section page-split">
-                    <div class="section-wrapper block content-1170 center-relative">
-                        <div class="bg-holder float-left">
-                            <div class="split-color"></div>                                
-                        </div>
-                        <div class="sticky-spacer">
-                            <div class="section-title-holder float-left">
-                                <div class="section-top-image"> 
-                                    <img src="images/06_left.png" alt="">
-                                </div>
-                                <h2 class="entry-title"> 
-                                    MEET <br>OUR <br>TEAM
-                                </h2>
-                                <p class="page-desc">
-                                    Get to know us <br>
-                                    much better
-                                </p>
-                            </div>
-                        </div>
+      	<!-- particles.min js -->
+      	<script src="js/particles.min.js"></script>
 
-                        <div class="section-content-holder float-right">
-                            <div class="content-wrapper">
-                                <div id="team-holder">
-                                    <div class="team-load-content-holder"></div>
-                                    <ul class="member-holder-wrapper">
+      	<!-- app js -->
+      	<script src="js/app.js"></script>
 
-                                        <li id="team-member-1" class="member-holder one_half">
-                                            <a class="img-link ajax-member-content" href="#team-1.html" data-id="1">
-                                                <img class="attachment-post-thumbnail" src="images/team/1.jpg" alt="">
-                                                <div class="member-mask">
-                                                    <div class="member-info-holder">
-                                                        <p class="member-name" >Thayallan Srinathan</p>
-                                                        <p class="member-position" style="color: red">Co-founder/Developer</p>
-										
-														<p class="member-position">Over 4+ years of Development experience</p>
-														
-														<p class="member-position">Hobbies: Playing sports, spending time with friends and reading!</p>
-												</div>
-												</div>
-											
-                                            </a>
-                                        </li>
+      	<!-- validator js -->
+      	<script src="js/validator.js"></script>
 
-                                        <li id="team-member-2" class="member-holder one_half">
-                                            <a class="img-link ajax-member-content" href="#" data-id="2">
-                                                <img class="attachment-post-thumbnail" src="images/team/2.jpg" alt="" >
-                                                <div class="member-mask">
-                                                    <div class="member-info-holder">
-                                                        <p class="member-name" style="color: red">Moiz Ahmed</p>
-                                                        <p class="member-position">Co-founder/Developer</p>
-														
-														<p class="member-position">50+ websites created for clients</p>
-														
-														<p class="member-position">Hobbies: </p>
-														
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </li>
+      	<!-- custom script -->
+        <script src="js/custom.js"></script>
 
-                                        <li id="team-member-3" class="member-holder one_half">
-                                            <a class="img-link ajax-member-content" href="team-3.html" data-id="3">
-                                                <img class="attachment-post-thumbnail" src="images/team/3.jpg" alt="" >
-                                                <div class="member-mask">
-                                                    <div class="member-info-holder">
-                                                        <p class="member-name">Ali Duri</p>
-                                                        <p class="member-position">Consultant</p>
-														
-														<p class="member-position">Helped businesses grow in total of over 50,000$ in sales</p>
-														
-														<p class="member-position">Hobbies: </p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </li>
-
-                                        <li id="team-member-4" class="member-holder one_half">
-                                            <a class="img-link ajax-member-content" href="team-4.html" data-id="4">
-                                                <img class="attachment-post-thumbnail" src="images/team/4.jpg" alt="" >
-                                                <div class="member-mask">
-                                                    <div class="member-info-holder">
-                                                        <p class="member-name">Hemraj Gosai</p>
-                                                        <p class="member-position">Social Media Specialist</p>
-														
-														<p class="member-position">In control of over 10+ different Instagram accounts</p>
-														
-														<p class="member-position">Hobbies:</p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </li>
-
-                                        <li id="team-member-5" class="member-holder one_half">
-                                            <a class="img-link ajax-member-content" href="team-5.html" data-id="5">
-                                                <img class="attachment-post-thumbnail" src="images/team_05_large.jpg" alt="" >
-                                                <div class="member-mask">
-                                                    <div class="member-info-holder">
-                                                        <p class="member-name">Navinaa Sanmugavadivel</p>
-                                                        <p class="member-position">Marketing Director</p>
-														
-														<p class="member-position">Award winning marketer with multiple competition wins</p>
-														
-														<p class="member-position">Hobbies: 
-														</p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li id="team-member-6" class="member-holder one_half">
-                                            <a class="img-link ajax-member-content" href="team-6.html" data-id="6">
-                                                <img class="attachment-post-thumbnail" src="images/team_06_large.jpg" alt="" >
-                                                <div class="member-mask">
-                                                    <div class="member-info-holder">
-                                                        <p class="member-name">John Doe</p>
-                                                        <p class="member-position">MARKETING</p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                    <div class="clear"></div>                                        
-                                </div>                                    
-                            </div>                                
-                        </div>
-                        <div class="clear"></div>                           
-                    </div>                        
-                </div>
--->
-
-                <!-- Clients 
-                <div id="clients" class="section full-width">
-                    <div class="section-wrapper block content-1170 center-relative">
-                        <div class="content-wrapper" >
-                            
-                                <script>
-                                    var textSlider1_speed = "10000";
-                                    var textSlider1_auto = "true";
-                                    var textSlider1_hover = "true";
-                                </script>
-                                <div class="text-slider-wrapper relative">
-                                    <div class="text-slider-header-quotes">
-
-                                    <div id="textSlider1" class="text-slider slider owl-carousel owl-theme"  >
-
-                                        <div class="text-slide">
-                                            <p class="text-slide-content">
-                                                Happy with their work! Very easy to speak with and finished the website faster than expected. Extremely satisified with the quality and would recommend to anyone else!
-                                            </p>
-                                            <img class="text-slide-img" src="images/testiomonial_img_01.jpg" alt="" />
-                                            <p class="text-slide-name"> TOM</p>
-                                            <p class="text-slide-position">CEO - Blue Ocean Nails & Spa</p>                                            
-                                        </div>   
-
-                                        <div class="text-slide">
-                                            <p class="text-slide-content">
-                                                Globular star cluster, another world brain is the seed of intelligence a billion trillion bits of moving fluff hearts of the stars. Hypatia preserve and cherish that pale blue dot.
-                                            </p>
-                                            <img class="text-slide-img" src="images/testiomonial_img_02.jpg" alt="" />
-                                            <p class="text-slide-name">Jane Williams</p>
-                                            <p class="text-slide-position">DESIGNER</p>                                            
-                                        </div>   
-
-                                        <div class="text-slide">
-                                            <p class="text-slide-content">
-                                                Hypatia preserve and cherish that pale blue dot. Hundreds of thousands! Inconspicuous motes of rock and gas the carbon in our apple pies creatures of the cosmos.
-                                            </p>
-                                            <img class="text-slide-img" src="images/testiomonial_img_03.jpg" alt="" />
-                                            <p class="text-slide-name">John Smith</p>
-                                            <p class="text-slide-position">GURU</p>                                            
-                                        </div>   
-
-                                    </div>
-
-                                    <div class="clear"></div>
-                                </div>                                    
-							</div>
-						</div>
-					</div>
-				</div>
-				
-
-<!---
-                            <div class="one_fourth top-80"> 
-                                <img src="images/client_logo_01.png" alt="" class="bottom-25 aligncenter">                                
-                                <img src="images/client_logo_05.png" alt="" class="bottom-25 aligncenter">                                
-                                <img src="images/client_logo_02.png" alt="" class="bottom-25 aligncenter">                                
-                            </div>
-
-                            <div class="one_fourth last top-80">
-                                <img src="images/client_logo_06.png" alt="" class="bottom-25 aligncenter">                                
-                                <img src="images/client_logo_03.png" alt="" class="bottom-25 aligncenter">                                
-                                <img src="images/client_logo_04.png" alt="" class="bottom-25 aligncenter">                                
-                            </div>
-                            <div class="clear"></div>                                
-                        </div>
-                        <div class="clear"></div>                           
-                    </div>                        
-                </div>
--->
-                <!-- Contact 
-                <div id="contact" class="section page-split">
-                    <div class="section-wrapper block content-1170 center-relative">
-                        <div class="bg-holder float-left">
-                            <div class="split-color"></div>                               
-                        </div>
-                        <div class="sticky-spacer">
-                            <div class="section-title-holder float-left">
-                                <div class="section-top-image"> 
-                                    <img src="images/07_left.png" alt="">
-                                </div>
-                                <h2 class="entry-title"> 
-                                    STAY <br>IN <br>TOUCH
-                                </h2>
-                                <p class="page-desc"> 
-                                    Use contact <br>
-                                    form on the right
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="section-content-holder float-right">
-                            <div class="content-wrapper">
-                                <div class="info-text">
-                                    Ghostly white figures in coveralls and <br> 
-                                    helmets are soflty dancing of the cosmic
-                                </div>
-                                <p>&nbsp;</p>
-
-                                <div class="contact-form">
-                                    <p><input id="name" type="text" name="your-name" placeholder="Name"></p>
-                                    <p><input id="contact-email" type="email" name="your-email" placeholder="Email"></p>                                    
-                                    <p><input id="subject" type="text" name="your-subject" placeholder="Subject"></p>
-                                    <p><textarea id="message" name="your-message" placeholder="Message"></textarea></p>
-                                    <p class="contact-submit-holder"><input type="submit" onClick="SendMail()" value="SEND"></p>                                
-                                </div>  
-
-                                <p>&nbsp;</p>
-
-                                <div class="one_half"> 
-                                    Flatland! A very small stage in a vast cosmic arena great turbulent clouds encyclopaedia galactica star stuff harvesting
-                                </div>
-
-                                <div class="one_half last"> 
-                                    Phone: +321 123 456 7 <br> 
-                                    E-mail: hello@cocobasic.com <br> 
-                                    Website: www.yoursitegoeshere.com <br>
-                                </div>
-                                <div class="clear"></div>                                   
-                            </div>                                
-                        </div>
-                        <div class="clear"></div>                            
-                    </div>                        
-                </div>
--->
-                <!-- Milestones -->
-                <div id="milestones" class="section full-width">
-                    <div class="section-wrapper block content-1170 center-relative">
-                        <div class="content-wrapper">
-                            <ul class="milestones-holder">
-                                <li class="milestone">
-                                    <p class="milestone-num">22</p>
-                                    <p class="milestone-text">
-                                        Happy <br> 
-                                        clients
-                                    </p>
-                                </li>
-                                <li class="milestone">
-                                    <p class="milestone-num">20K+</p>
-                                    <p class="milestone-text">
-                                        Lines of code
-                                    </p>
-                                </li>
-                                <li class="milestone">
-                                    <p class="milestone-num">1000+ </p>
-                                    <p class="milestone-text">
-                                        Hours spent
-                                    </p>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="clear"></div>                           
-                    </div>                       
-                </div>                    
-            
-
-            <!-- Footer -->
-            <footer class="footer" id ="contact">
-                <div class="footer-content center-relative">
-                    <div class="footer-mail">
-                        <a href="info@yyzdesigns.com">info@yyzdesigns.com</a>
-                    </div>
-                    <div class="footer-number">
-                        <a href="tel:6472283352">647.228.3352</a>
-                    </div>
-                    <div class="footer-info"> 
-                        Toronto <br> 
-                        Canada
-                    </div>
-<!--
-                    <div class="social-holder"> 
-                        <a href="https://www.instagram.com/tmdevs/">
-                            <span class="fa fa-instagram"></span>
-                        </a>
-                        <a href="https://www.facebook.com/TMDEVS/">
-                            <span class="fa fa-facebook"></span>
-						</a>
-                    </div>-->
-
-                    <div class="copyright-holder"> 
-                        © 2018 YYZdesigns
-					</div>
-				</div>
-			 </footer>
-			</div>
-   
-
-        <!--Load JavaScript-->
-        <script src="js/jquery.js"></script>			                                       
-        <script src="js/jquery.sticky.js"></script>			                                       
-        <script src='js/imagesloaded.pkgd.js'></script>                
-        <script src='js/jquery.fitvids.js'></script>                
-        <script src='js/jquery.smartmenus.min.js'></script>                                 
-        <script src='js/isotope.pkgd.js'></script>                                 
-        <script src='js/jquery.easing.1.3.js'></script>                                                       
-        <script src='js/jquery.prettyPhoto.js'></script>                                                         
-        <script src='js/owl.carousel.min.js'></script>                          
-        <script src='js/jquery.sticky-kit.min.js'></script>                          
-        <script src='js/main.js'></script>
-        <script src="js/app.js" charset="utf-8"></script>
-		</div>
     </body>
-</html>                            
+</html>
