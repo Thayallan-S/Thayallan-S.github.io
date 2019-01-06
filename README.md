@@ -6,7 +6,7 @@ You can take a look at this website at www.thayallans.com
 1. Simple loading
 2. Header with particles
 3. About Me Section with Links
-
+4. Skills Section with 3 types of skills
 
 
 # TO-DO 
