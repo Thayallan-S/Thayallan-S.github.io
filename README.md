@@ -3,7 +3,8 @@
 You can take a look at this website at www.thayallans.com
 
 # Features
-1. Header with particles
+1. Simple loading
+2. Header with particles
 
 
 # TO-DO 
