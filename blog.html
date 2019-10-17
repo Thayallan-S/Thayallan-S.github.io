@@ -1,99 +1,89 @@
-<html lang="en" class="h-100">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Jekyll v3.8.5">
-    <title>Thayallan Srinathan</title>
-
+<html><head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+        <meta name="generator" content="Jekyll v3.8.5">
+        <title>Thayallan Srinathan</title>
     
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <style>
-        .bd-placeholder-img {
-            font-size: 1.125rem;
-            text-anchor: middle;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-        }
-
-        @media (min-width: 768px) {
-            .bd-placeholder-img-lg {
-                font-size: 3.5rem;
+        
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+        <style>
+            .bd-placeholder-img {
+                font-size: 1.125rem;
+                text-anchor: middle;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
             }
-        }
-    </style>
     
-    <link href="general.css" rel="stylesheet">
-</head>
-
-<body class="d-flex flex-column h-100">
+            @media (min-width: 768px) {
+                .bd-placeholder-img-lg {
+                    font-size: 3.5rem;
+                }
+            }
+        </style>
+        
+        <link href="general.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="data:text/css;charset=UTF-8,%0A%20%20%20%20%20%20.darkmode-layer%20%7B%0A%20%20%20%20%20%20%20%20position%3A%20fixed%3B%0A%20%20%20%20%20%20%20%20pointer-events%3A%20none%3B%0A%20%20%20%20%20%20%20%20background%3A%20%23fff%3B%0A%20%20%20%20%20%20%20%20transition%3A%20all%200.3s%20ease%3B%0A%20%20%20%20%20%20%20%20mix-blend-mode%3A%20difference%3B%0A%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20.darkmode-layer--button%20%7B%0A%20%20%20%20%20%20%20%20width%3A%202.9rem%3B%0A%20%20%20%20%20%20%20%20height%3A%202.9rem%3B%0A%20%20%20%20%20%20%20%20border-radius%3A%2050%25%3B%0A%20%20%20%20%20%20%20%20right%3A%2032px%3B%0A%20%20%20%20%20%20%20%20bottom%3A%2032px%3B%0A%20%20%20%20%20%20%20%20left%3A%20unset%3B%0A%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20.darkmode-layer--simple%20%7B%0A%20%20%20%20%20%20%20%20width%3A%20100%25%3B%0A%20%20%20%20%20%20%20%20height%3A%20100%25%3B%0A%20%20%20%20%20%20%20%20top%3A%200%3B%0A%20%20%20%20%20%20%20%20left%3A%200%3B%0A%20%20%20%20%20%20%20%20transform%3A%20scale(1)%20!important%3B%0A%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20.darkmode-layer--expanded%20%7B%0A%20%20%20%20%20%20%20%20transform%3A%20scale(100)%3B%0A%20%20%20%20%20%20%20%20border-radius%3A%200%3B%0A%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20.darkmode-layer--no-transition%20%7B%0A%20%20%20%20%20%20%20%20transition%3A%20none%3B%0A%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20.darkmode-toggle%20%7B%0A%20%20%20%20%20%20%20%20background%3A%20%23100f2c%3B%0A%20%20%20%20%20%20%20%20width%3A%203rem%3B%0A%20%20%20%20%20%20%20%20height%3A%203rem%3B%0A%20%20%20%20%20%20%20%20position%3A%20fixed%3B%0A%20%20%20%20%20%20%20%20border-radius%3A%2050%25%3B%0A%20%20%20%20%20%20%20%20right%3A%2032px%3B%0A%20%20%20%20%20%20%20%20bottom%3A%2032px%3B%0A%20%20%20%20%20%20%20%20left%3A%20unset%3B%0A%20%20%20%20%20%20%20%20cursor%3A%20pointer%3B%0A%20%20%20%20%20%20%20%20transition%3A%20all%200.5s%20ease%3B%0A%20%20%20%20%20%20%20%20display%3A%20flex%3B%0A%20%20%20%20%20%20%20%20justify-content%3A%20center%3B%0A%20%20%20%20%20%20%20%20align-items%3A%20center%3B%0A%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20.darkmode-toggle--white%20%7B%0A%20%20%20%20%20%20%20%20background%3A%20%23fff%3B%0A%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20.darkmode-background%20%7B%0A%20%20%20%20%20%20%20%20background%3A%20%23fff%3B%0A%20%20%20%20%20%20%20%20position%3A%20fixed%3B%0A%20%20%20%20%20%20%20%20pointer-events%3A%20none%3B%0A%20%20%20%20%20%20%20%20z-index%3A%20-10%3B%0A%20%20%20%20%20%20%20%20width%3A%20100%25%3B%0A%20%20%20%20%20%20%20%20height%3A%20100%25%3B%0A%20%20%20%20%20%20%20%20top%3A%200%3B%0A%20%20%20%20%20%20%20%20left%3A%200%3B%0A%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20img%2C%20.darkmode-ignore%20%7B%0A%20%20%20%20%20%20%20%20isolation%3A%20isolate%3B%0A%20%20%20%20%20%20%20%20display%3A%20inline-block%3B%0A%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%40media%20screen%20and%20(-ms-high-contrast%3A%20active)%2C%20(-ms-high-contrast%3A%20none)%20%7B%0A%20%20%20%20%20%20%20%20.darkmode-toggle%20%7Bdisplay%3A%20none%20!important%7D%0A%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%40supports%20(-ms-ime-align%3Aauto)%2C%20(-ms-accelerator%3Atrue)%20%7B%0A%20%20%20%20%20%20%20%20.darkmode-toggle%20%7Bdisplay%3A%20none%20!important%7D%0A%20%20%20%20%20%20%7D%0A%20%20%20%20"></head>
     
-    <main role="main" class="flex-shrink-0">
-        <div class="container">
-            <h1 class="mt-5">My Blog</h1>
-            <p class="lead">I like to write what's on my mind here. Take a look.</p>
-            <br>
-            <br>
-
-            <!---Blog Post #1-->
-            <h3>Why ambitious teenagers should learn to code.</h3>
-            <h6>Monday October 14 2019</h6>
-            <br>
-            <p>My assumption if you're reading this is that you're a super ambitious individual who want's to impact a ton of people. If you think you fall under this bucket,
-            keep reading! This post is supposed to be an extension of one of my favourite articles by Sam Altman.
-            <a href="https://blog.samaltman.com/advice-for-ambitious-19-year-olds">Advice for Ambitious 19 Year olds.</a>
-            Highly recommend that you read this article before reading the rest of this post. 
-            </p>
-            <br>
-            <p>
-            In the article Sam Altman does a great job of describing what an ambitious teenager should choose
-            to do during some of their most productive years. The three main options he outlines is 1) Going
-            to college and building a bunch of side projects. 2) Joining a company with high growth potential (Rocket Ships)
-            3) Go start a company around something you really want. I believe as a teenager, your priority should be
-            to learn a ton and any one of those 3 options can you lead you on a path to high growth. 
-            </p>
-            <br> 
-            <p>
-            Now for many of you, you're probably thinking that any one of these options would be great but how 
-            do I even put myself in a position where I can get these options. I think that from being in this position and talking 
-            to a lot of smart teenagers in the same position, the best method is to learn to code.
-            </p>
-            <br>
-            <p>
-            In the startup world, there's this methodology which many people preach: You want to give yourself as many unfair advantages as possible.
-            Being a hacker/developer will always give you an advantage in any of these 3 situations. Whether you want to build side projects, work for a rocketship 
-            or start your own company. I'll explain my point with some anecdotes and examples.
-            </p>
-            <br>
-            <h5>Case #1</h5>
-            <h6>Mark Zuckerberg</h6>
-            <p>
-            I'm sure a ton of you know about Mark Zuckerberg, the founder of Facebook. 
-            </p>
-            <br>
-            <h5>Case #2</h5>
-            <h6>Sahil Lavingia</h6>
-            <p>
-            
-            </p>
-            <br>
-            <h5>Case #3</h5>
-            <h6>Patrick Collison</h6>
-            <p>
-
-            </p>
-        </div>
-    </main>
-    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.0/lib/darkmode-js.min.js"></script>
-    <script>
-        new Darkmode().showWidget();
-    </script>
-</body>
-
-</html>
+    <body class="d-flex flex-column h-100"><div class="darkmode-background"></div><div class="darkmode-layer darkmode-layer--button"></div><div class="darkmode-toggle"></div>
+        
+        <main role="main" class="flex-shrink-0">
+            <div class="container">
+                <h1 class="mt-5">My Blog</h1>
+                <p class="lead">I like to write what's on my mind here. Take a look.</p>
+                <br>
+                <br>
+    
+                <!---Blog Post #1-->
+                <h3>Why ambitious teenagers should learn to code.</h3>
+                <h6>Monday October 14 2019</h6>
+                <br>
+                <p>My assumption if you're reading this is that you're a super ambitious individual who want's to impact a ton of people. If you think you fall under this bucket,
+                keep reading! This post is supposed to be an extension of one of my favourite articles by Sam Altman.
+                <a href="https://blog.samaltman.com/advice-for-ambitious-19-year-olds">Advice for Ambitious 19 Year olds.</a>
+                Highly recommend that you read this article before reading the rest of this post.</p>
+                <p>
+                In the article Sam Altman does a great job of describing what an ambitious teenager should choose
+                to do during some of their most productive years. The three main options he outlines is 1) Going
+                to college and building a bunch of side projects. 2) Joining a company with high growth potential (Rocket Ships)
+                3) Go start a company around something you really want. I believe as a teenager, your priority should be
+                to learn a ton and any one of those 3 options can you lead you on a path to high growth.</p> 
+                <p>
+                Now for many of you, you're probably thinking that any one of these options would be great but how 
+                do I even put myself in a position where I can get these options. I think that from being in this position and talking 
+                to a lot of smart teenagers in the same position, the best method is to learn to code.</p>
+                <p>
+                In the startup world, there's this methodology which many people preach: You want to give yourself as many unfair advantages as possible.
+                Being a hacker/developer/engineer will always give you an advantage in any of these 3 situations. Whether you want to build side projects, work for a rocket-ship 
+                or start your own company. I'll explain why for each situation:</p><p><br></p>
+                <h5>Build side projects in school</h5>
+                <p>
+                In order to <b>build</b> side projects, you're going to have to learn to code. The motivation behind side projects is usually just building products that you want 
+                and the most efficient way would be to learn to code and be able to build thos side projects yourself. There are the odd cases where people may outsource the 
+                work for a side project but that totally takes away from any of the learning which is almost always the biggest asset from building a ton of side projects. Mark 
+                Zuckerberg the founder of Facebook used to build a ton of side projects before building Facebook (which also started off as a side project). The point being, side
+                projects are a gateway to serendipity, so build them yourself to move faster and learn a ton more.</p>
+                <h5>Working for a rocket ship</h5>
+                <p> 
+                Sam Altman says that at any given point in time there are only a few rocket-ships that exist and that for a young individual these are really easy to identify. As 
+                I started spending more time in the startup community, this became really easy to identify. Now a lot of rocket-ship companies know that they are a rocket-ship, 
+                so there's no way of fooling them into giving you a job. The best way to show that you can add value and become a valuable member of the team right away would 
+                be to write code. Companies value engineering talent and if you get good enough at programming and they recognize it, the companies will waste no time to 
+                get you to join their team. 
+                </p>
+                <h5>Starting your own company</h5>
+                <p>
+                Whenever starting a company, the most important part is building product. In order to do sales, marketing, growth, you need a product first. Once you have a product you have to be able to iterate and keep making that product better. In order to do so, you need to be able to build and if not you're going to be dependent on someone else to build it for you. Talking to a lot of founders who are non-technical, one of the things that they would change if they started their company again would be to learn to code. So learn to code that way you can build product and iterate really quickly.&nbsp;</p><p><br></p><p>I'll probably do a follow up post diving deeper into some of the topics we talked about in this post.</p><p><br></p>
+            </div>
+        </main>
+        <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.0/lib/darkmode-js.min.js"></script>
+        <script>
+            new Darkmode().showWidget();
+        </script>
+    
+    
+    </body></html>
