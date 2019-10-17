@@ -1,6 +1,4 @@
-<html lang="en" class="h-100">
-
-<head>
+<html><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -29,9 +27,9 @@
     </style>
     
     <link href="general.css" rel="stylesheet">
-</head>
+<link rel="stylesheet" type="text/css" href="data:text/css;charset=UTF-8,%0A%20%20%20%20%20%20.darkmode-layer%20%7B%0A%20%20%20%20%20%20%20%20position%3A%20fixed%3B%0A%20%20%20%20%20%20%20%20pointer-events%3A%20none%3B%0A%20%20%20%20%20%20%20%20background%3A%20%23fff%3B%0A%20%20%20%20%20%20%20%20transition%3A%20all%200.3s%20ease%3B%0A%20%20%20%20%20%20%20%20mix-blend-mode%3A%20difference%3B%0A%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20.darkmode-layer--button%20%7B%0A%20%20%20%20%20%20%20%20width%3A%202.9rem%3B%0A%20%20%20%20%20%20%20%20height%3A%202.9rem%3B%0A%20%20%20%20%20%20%20%20border-radius%3A%2050%25%3B%0A%20%20%20%20%20%20%20%20right%3A%2032px%3B%0A%20%20%20%20%20%20%20%20bottom%3A%2032px%3B%0A%20%20%20%20%20%20%20%20left%3A%20unset%3B%0A%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20.darkmode-layer--simple%20%7B%0A%20%20%20%20%20%20%20%20width%3A%20100%25%3B%0A%20%20%20%20%20%20%20%20height%3A%20100%25%3B%0A%20%20%20%20%20%20%20%20top%3A%200%3B%0A%20%20%20%20%20%20%20%20left%3A%200%3B%0A%20%20%20%20%20%20%20%20transform%3A%20scale(1)%20!important%3B%0A%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20.darkmode-layer--expanded%20%7B%0A%20%20%20%20%20%20%20%20transform%3A%20scale(100)%3B%0A%20%20%20%20%20%20%20%20border-radius%3A%200%3B%0A%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20.darkmode-layer--no-transition%20%7B%0A%20%20%20%20%20%20%20%20transition%3A%20none%3B%0A%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20.darkmode-toggle%20%7B%0A%20%20%20%20%20%20%20%20background%3A%20%23100f2c%3B%0A%20%20%20%20%20%20%20%20width%3A%203rem%3B%0A%20%20%20%20%20%20%20%20height%3A%203rem%3B%0A%20%20%20%20%20%20%20%20position%3A%20fixed%3B%0A%20%20%20%20%20%20%20%20border-radius%3A%2050%25%3B%0A%20%20%20%20%20%20%20%20right%3A%2032px%3B%0A%20%20%20%20%20%20%20%20bottom%3A%2032px%3B%0A%20%20%20%20%20%20%20%20left%3A%20unset%3B%0A%20%20%20%20%20%20%20%20cursor%3A%20pointer%3B%0A%20%20%20%20%20%20%20%20transition%3A%20all%200.5s%20ease%3B%0A%20%20%20%20%20%20%20%20display%3A%20flex%3B%0A%20%20%20%20%20%20%20%20justify-content%3A%20center%3B%0A%20%20%20%20%20%20%20%20align-items%3A%20center%3B%0A%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20.darkmode-toggle--white%20%7B%0A%20%20%20%20%20%20%20%20background%3A%20%23fff%3B%0A%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20.darkmode-background%20%7B%0A%20%20%20%20%20%20%20%20background%3A%20%23fff%3B%0A%20%20%20%20%20%20%20%20position%3A%20fixed%3B%0A%20%20%20%20%20%20%20%20pointer-events%3A%20none%3B%0A%20%20%20%20%20%20%20%20z-index%3A%20-10%3B%0A%20%20%20%20%20%20%20%20width%3A%20100%25%3B%0A%20%20%20%20%20%20%20%20height%3A%20100%25%3B%0A%20%20%20%20%20%20%20%20top%3A%200%3B%0A%20%20%20%20%20%20%20%20left%3A%200%3B%0A%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20img%2C%20.darkmode-ignore%20%7B%0A%20%20%20%20%20%20%20%20isolation%3A%20isolate%3B%0A%20%20%20%20%20%20%20%20display%3A%20inline-block%3B%0A%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%40media%20screen%20and%20(-ms-high-contrast%3A%20active)%2C%20(-ms-high-contrast%3A%20none)%20%7B%0A%20%20%20%20%20%20%20%20.darkmode-toggle%20%7Bdisplay%3A%20none%20!important%7D%0A%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%40supports%20(-ms-ime-align%3Aauto)%2C%20(-ms-accelerator%3Atrue)%20%7B%0A%20%20%20%20%20%20%20%20.darkmode-toggle%20%7Bdisplay%3A%20none%20!important%7D%0A%20%20%20%20%20%20%7D%0A%20%20%20%20"></head>
 
-<body class="d-flex flex-column h-100">
+<body class="d-flex flex-column h-100"><div class="darkmode-background"></div><div class="darkmode-layer darkmode-layer--button"></div><div class="darkmode-toggle"></div>
   
     <main role="main" class="flex-shrink-0">
         <div class="container">
@@ -39,10 +37,7 @@
             <p class="lead">I'm a full stack engineer and currently live in Toronto. On a perpetual leave from the University of Toronto lol. I like to build stuff and if you have any cool ideas, send me an email!</p>
             <p><a href="mailto:thayallan.srinathan@gmail.com">thayallan.srinathan@gmail.com</a>.</p>
             <h5><b>Find me on: </b></h5>
-            <p><a href="https://twitter.com/thayallans">Twitter</a>-----><a href="https://github.com/thayallan-s">   Github</a>-----><a href="https://www.producthunt.com/@thayallans">    Product Hunt</a></p>
-            <br>
-            <br>
-            <br>
+            <p><a href="https://twitter.com/thayallans">Twitter</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<a href="https://github.com/thayallan-s">Github</a>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<a href="https://www.producthunt.com/@thayallans">Product Hunt</a></p><p><br></p>
             <h4><b><a href="blog.html">Read my blog</a></b></h4>
         </div>
     </main>
@@ -52,6 +47,6 @@
         new Darkmode().showWidget();
     </script>
 
-</body>
 
-</html>
+
+</body></html>
