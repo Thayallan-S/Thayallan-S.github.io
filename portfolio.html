@@ -1,0 +1,325 @@
+<!doctype html>
+<script>var jlGlobals = {};
+  function recomputeComputedValue() {
+    const storedSetting = localStorage.getItem('theme')
+    const osThemeIsDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    /*
+    Light by default
+    Dark if stored setting is null and OS is in dark mode
+    Whatever stored setting is if it exists
+  
+                          | os dark       os light
+      ----------------------------------------------
+      stored setting dark  | dark          dark
+      ----------------------------------------------
+      stored setting light | light         light
+      ----------------------------------------------
+      stored setting null  | dark          light
+  
+    */
+
+    jlGlobals.theme = storedSetting ? storedSetting : (osThemeIsDark ? "dark" : "light");
+    if (["light", "dark"].indexOf(jlGlobals.theme) === -1) {
+      console.error("Could not determine theme");
+      /* Log */
+      jlGlobals.theme = "light"
+    }
+
+    document.documentElement.setAttribute('data-theme', jlGlobals.theme);
+  }
+
+  recomputeComputedValue()</script>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <link rel="stylesheet" href="https://files.jameslittle.me/webfonts/jetbrains-mono/jetbrains-mono.css">
+  <link rel="stylesheet" href="https://jameslittle.me/styles/main.css">
+  <link rel="stylesheet" href="https://jameslittle.me/styles/prism.css">
+  <title>Portfolio • thayallan.com</title>
+</head>
+
+<body>
+  <section class="topbar">
+    <div><a href="https://thayallan.com/" class="back-home">Thayallan Srinathan</a></div>
+    <div class="linked-list"><a href="portfolio.html">blog: Coming Soon</a> <a href=""><b>portfolio</b></a></div>
+  </section>
+  <main>
+    <h1 class="big-title">Portfolio of Projects</h1>
+    <link rel="stylesheet" href="https://jameslittle.me/styles/post-listing.css">
+    <link rel="stylesheet" href="https://jameslittle.me/styles/portfolio-listing.css">
+    <link rel="stylesheet" href="https://jameslittle.me/styles/portfolio-index.css">
+    <ul class="portfolio-index">
+      <li class="portfolio-listing"><a href="https://readshit.com">
+          <picture style="min-height: 100%"><img src="images/readshit.png" alt=""></picture>
+          <div class="text">
+            <div style="display: flex; align-items: baseline; justify-content: space-between">
+              <h2>Readshit <span class="ext-arrow">&nearr;</span></h2><a href="https://readshit.com">
+                <path
+                  d="m0-31.904c-8.995 0-16.288 7.293-16.288 16.29 0 7.197 4.667 13.302 11.14 15.457.815.149 1.112-.354 1.112-.786 0-.386-.014-1.411-.022-2.77-4.531.984-5.487-2.184-5.487-2.184-.741-1.881-1.809-2.382-1.809-2.382-1.479-1.011.112-.991.112-.991 1.635.116 2.495 1.679 2.495 1.679 1.453 2.489 3.813 1.77 4.741 1.354.148-1.053.568-1.771 1.034-2.178-3.617-.411-7.42-1.809-7.42-8.051 0-1.778.635-3.232 1.677-4.371-.168-.412-.727-2.068.159-4.311 0 0 1.368-.438 4.48 1.67 1.299-.361 2.693-.542 4.078-.548 1.383.006 2.777.187 4.078.548 3.11-2.108 4.475-1.67 4.475-1.67.889 2.243.33 3.899.162 4.311 1.044 1.139 1.675 2.593 1.675 4.371 0 6.258-3.809 7.635-7.438 8.038.585.503 1.106 1.497 1.106 3.017 0 2.177-.02 3.934-.02 4.468 0 .436.293.943 1.12.784 6.468-2.159 11.131-8.26 11.131-15.455 0-8.997-7.294-16.29-16.291-16.29"
+                  fill="#181717" transform="matrix(3.06946 0 0 3.14714 49.9954 100.406)" />
+                </svg></a>
+            </div>
+            <p><b>Napster for Books.</b> A way for users to read any book in the browser for free. Got 150k+ users and
+              was the top product
+              on ProductHunt before it was taken down. It ended up pissing off a bunch of authors and publishers so we
+              had to take it down.
+              Check out the demo below.</p>
+            <p class="stats"><a href="https://www.loom.com/share/4ecc925e549e4dc7bfe03c4e9846a436">Demo Here</a></p>
+          </div>
+        </a></li>
+      <li class="portfolio-listing"><a href="https://scrnrcrd.com">
+          <picture style="min-height: 100%"><img src="images/scrnrcrd.png" alt=""></picture>
+          <div class="text">
+            <div style="display: flex; align-items: baseline; justify-content: space-between">
+              <h2>Scrnrcrd <span class="ext-arrow">&nearr;</span></h2><a class="github-link"
+                href="https://github.com/thayallans/scrnrcrd.github.io"><svg clip-rule="evenodd" fill-rule="evenodd"
+                  stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 100 100"
+                  style="width: 1.6em; height: 1.6em" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="m0-31.904c-8.995 0-16.288 7.293-16.288 16.29 0 7.197 4.667 13.302 11.14 15.457.815.149 1.112-.354 1.112-.786 0-.386-.014-1.411-.022-2.77-4.531.984-5.487-2.184-5.487-2.184-.741-1.881-1.809-2.382-1.809-2.382-1.479-1.011.112-.991.112-.991 1.635.116 2.495 1.679 2.495 1.679 1.453 2.489 3.813 1.77 4.741 1.354.148-1.053.568-1.771 1.034-2.178-3.617-.411-7.42-1.809-7.42-8.051 0-1.778.635-3.232 1.677-4.371-.168-.412-.727-2.068.159-4.311 0 0 1.368-.438 4.48 1.67 1.299-.361 2.693-.542 4.078-.548 1.383.006 2.777.187 4.078.548 3.11-2.108 4.475-1.67 4.475-1.67.889 2.243.33 3.899.162 4.311 1.044 1.139 1.675 2.593 1.675 4.371 0 6.258-3.809 7.635-7.438 8.038.585.503 1.106 1.497 1.106 3.017 0 2.177-.02 3.934-.02 4.468 0 .436.293.943 1.12.784 6.468-2.159 11.131-8.26 11.131-15.455 0-8.997-7.294-16.29-16.291-16.29"
+                    fill="#181717" transform="matrix(3.06946 0 0 3.14714 49.9954 100.406)" />
+                </svg></a>
+            </div>
+            <p><b>Screen Recording for Free.</b> A tool for users to record their screen without downloading any
+              software.
+              It blew up on ProductHunt and was the 3rd product of the day. I got over 40k users for the tool and
+              received media attention
+              including the blog post below by LifeHacker</p>
+            <p class="stats"><a
+                href="https://lifehacker.com/easily-record-your-computer-screen-with-this-free-websi-1837131204">Blog
+                Post Here</a></p>
+            <p class="stats"><a href="">Demo Here</a></p>
+          </div>
+        </a></li>
+      <li class="portfolio-listing"><a href="https://www.youtube.com/watch?v=iYCftPuVGQc">
+          <picture style="min-height: 100%"><img src="images/hotspot.jpg" alt=""></picture>
+          <div class="text">
+            <div style="display: flex; align-items: baseline; justify-content: space-between">
+              <h2>Hotspot <span class="ext-arrow">&nearr;</span></h2>
+            </div>
+            <p><b>Internet over SMS.</b> A method for people in developing countries to access the internet over
+              cellular service. Worked on it with a couple friends and we were fortunate enough
+              to win the CES Young Innovators to Watch Award in 2019 as well as a Not Impossible awardee. Check out the
+              documentary we had filmed on us!</p>
+            <p class="stats"><a
+                href="https://www.prnewswire.com/news-releases/not-impossible-labs-recognizes-five-examples-of-technology-for-the-sake-of-humanity-with-2019-not-impossible-awards-300852896.html">Media
+                Post</a></p>
+          </div>
+        </a></li>
+      <!--<li class="portfolio-listing"><a href="https://stork-search.net">
+          <picture style="min-height: 100%"><img src="https://files.jameslittle.me/images/tmp/stork-thumb.png" alt="">
+          </picture>
+          <div class="text">
+            <div style="display: flex; align-items: baseline; justify-content: space-between">
+              <h2>Stork <span class="ext-arrow">&nearr;</span></h2><a class="github-link"
+                href="https://github.com/jameslittle230/stork"><svg clip-rule="evenodd" fill-rule="evenodd"
+                  stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 100 100"
+                  style="width: 1.6em; height: 1.6em" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="m0-31.904c-8.995 0-16.288 7.293-16.288 16.29 0 7.197 4.667 13.302 11.14 15.457.815.149 1.112-.354 1.112-.786 0-.386-.014-1.411-.022-2.77-4.531.984-5.487-2.184-5.487-2.184-.741-1.881-1.809-2.382-1.809-2.382-1.479-1.011.112-.991.112-.991 1.635.116 2.495 1.679 2.495 1.679 1.453 2.489 3.813 1.77 4.741 1.354.148-1.053.568-1.771 1.034-2.178-3.617-.411-7.42-1.809-7.42-8.051 0-1.778.635-3.232 1.677-4.371-.168-.412-.727-2.068.159-4.311 0 0 1.368-.438 4.48 1.67 1.299-.361 2.693-.542 4.078-.548 1.383.006 2.777.187 4.078.548 3.11-2.108 4.475-1.67 4.475-1.67.889 2.243.33 3.899.162 4.311 1.044 1.139 1.675 2.593 1.675 4.371 0 6.258-3.809 7.635-7.438 8.038.585.503 1.106 1.497 1.106 3.017 0 2.177-.02 3.934-.02 4.468 0 .436.293.943 1.12.784 6.468-2.159 11.131-8.26 11.131-15.455 0-8.997-7.294-16.29-16.291-16.29"
+                    fill="#181717" transform="matrix(3.06946 0 0 3.14714 49.9954 100.406)" /></svg></a>
+            </div>
+            <p>Search for static sites. Index your content and add search to your website, no server-side processing
+              required.</p>
+            <p class="stats">Native &amp; WASM • 2019–</p>
+          </div>
+        </a></li>
+      <li class="portfolio-listing"><a href="https://jameslittle.me/webpic">
+          <picture style="min-height: 100%"><img src="https://files.jameslittle.me/images/tmp/webpic-thumb.png" alt="">
+          </picture>
+          <div class="text">
+            <div style="display: flex; align-items: baseline; justify-content: space-between">
+              <h2>Webpic <span class="ext-arrow">&nearr;</span></h2><a class="github-link"
+                href="https://jameslittle.me/webpic"><svg clip-rule="evenodd" fill-rule="evenodd"
+                  stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 100 100"
+                  style="width: 1.6em; height: 1.6em" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="m0-31.904c-8.995 0-16.288 7.293-16.288 16.29 0 7.197 4.667 13.302 11.14 15.457.815.149 1.112-.354 1.112-.786 0-.386-.014-1.411-.022-2.77-4.531.984-5.487-2.184-5.487-2.184-.741-1.881-1.809-2.382-1.809-2.382-1.479-1.011.112-.991.112-.991 1.635.116 2.495 1.679 2.495 1.679 1.453 2.489 3.813 1.77 4.741 1.354.148-1.053.568-1.771 1.034-2.178-3.617-.411-7.42-1.809-7.42-8.051 0-1.778.635-3.232 1.677-4.371-.168-.412-.727-2.068.159-4.311 0 0 1.368-.438 4.48 1.67 1.299-.361 2.693-.542 4.078-.548 1.383.006 2.777.187 4.078.548 3.11-2.108 4.475-1.67 4.475-1.67.889 2.243.33 3.899.162 4.311 1.044 1.139 1.675 2.593 1.675 4.371 0 6.258-3.809 7.635-7.438 8.038.585.503 1.106 1.497 1.106 3.017 0 2.177-.02 3.934-.02 4.468 0 .436.293.943 1.12.784 6.468-2.159 11.131-8.26 11.131-15.455 0-8.997-7.294-16.29-16.291-16.29"
+                    fill="#181717" transform="matrix(3.06946 0 0 3.14714 49.9954 100.406)" /></svg></a>
+            </div>
+            <p>An opinionated Mac application for processing and uploading images. Optimized to make image loading
+              modern, fast, and lightweight.</p>
+            <p class="stats">macOS &amp; SwiftUI • 2020–</p>
+          </div>
+        </a></li>
+      <li class="portfolio-listing"><a href="https://jameslittle.me/blog/2020/splitt-postmortem/">
+          <picture style="min-height: 100%"><img src="https://files.jameslittle.me/images/tmp/splitt-thumb.png" alt="">
+          </picture>
+          <div class="text">
+            <div style="display: flex; align-items: baseline; justify-content: space-between">
+              <h2>Splitt <span class="ext-arrow">&nearr;</span></h2><a class="github-link"
+                href="https://github.com/jameslittle230/splitt-back"><svg clip-rule="evenodd" fill-rule="evenodd"
+                  stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 100 100"
+                  style="width: 1.6em; height: 1.6em" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="m0-31.904c-8.995 0-16.288 7.293-16.288 16.29 0 7.197 4.667 13.302 11.14 15.457.815.149 1.112-.354 1.112-.786 0-.386-.014-1.411-.022-2.77-4.531.984-5.487-2.184-5.487-2.184-.741-1.881-1.809-2.382-1.809-2.382-1.479-1.011.112-.991.112-.991 1.635.116 2.495 1.679 2.495 1.679 1.453 2.489 3.813 1.77 4.741 1.354.148-1.053.568-1.771 1.034-2.178-3.617-.411-7.42-1.809-7.42-8.051 0-1.778.635-3.232 1.677-4.371-.168-.412-.727-2.068.159-4.311 0 0 1.368-.438 4.48 1.67 1.299-.361 2.693-.542 4.078-.548 1.383.006 2.777.187 4.078.548 3.11-2.108 4.475-1.67 4.475-1.67.889 2.243.33 3.899.162 4.311 1.044 1.139 1.675 2.593 1.675 4.371 0 6.258-3.809 7.635-7.438 8.038.585.503 1.106 1.497 1.106 3.017 0 2.177-.02 3.934-.02 4.468 0 .436.293.943 1.12.784 6.468-2.159 11.131-8.26 11.131-15.455 0-8.997-7.294-16.29-16.291-16.29"
+                    fill="#181717" transform="matrix(3.06946 0 0 3.14714 49.9954 100.406)" /></svg></a>
+            </div>
+            <p>An app for tracking expenses and reconciling debts in a household or group of friends.</p>
+            <p class="stats">Web &amp; iOS • 2019–2020</p>
+          </div>
+        </a></li>
+      <li class="portfolio-listing"><a href="ibsg/index.html">
+          <picture style="min-height: 100%"><img src="https://files.jameslittle.me/images/tmp/ibsg-thumb.png" alt="">
+          </picture>
+          <div class="text">
+            <div style="display: flex; align-items: baseline; justify-content: space-between">
+              <h2>Isolation-Based Scene Generation</h2>
+            </div>
+            <p>My senior thesis describing a synthetic data generation method for training machine-learning object
+              detectors.</p>
+            <p class="stats">Tensorflow • 2018-19</p>
+          </div>
+        </a></li>
+      <li class="portfolio-listing"><a href="https://jil.im/thtr">
+          <picture style="min-height: 100%"><img src="https://files.jameslittle.me/images/tmp/thtr-thumb.png" alt="">
+          </picture>
+          <div class="text">
+            <div style="display: flex; align-items: baseline; justify-content: space-between">
+              <h2>THTR: Theater Diary App <span class="ext-arrow">&nearr;</span></h2><a class="github-link"
+                href="https://github.com/jameslittle230/thtr"><svg clip-rule="evenodd" fill-rule="evenodd"
+                  stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 100 100"
+                  style="width: 1.6em; height: 1.6em" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="m0-31.904c-8.995 0-16.288 7.293-16.288 16.29 0 7.197 4.667 13.302 11.14 15.457.815.149 1.112-.354 1.112-.786 0-.386-.014-1.411-.022-2.77-4.531.984-5.487-2.184-5.487-2.184-.741-1.881-1.809-2.382-1.809-2.382-1.479-1.011.112-.991.112-.991 1.635.116 2.495 1.679 2.495 1.679 1.453 2.489 3.813 1.77 4.741 1.354.148-1.053.568-1.771 1.034-2.178-3.617-.411-7.42-1.809-7.42-8.051 0-1.778.635-3.232 1.677-4.371-.168-.412-.727-2.068.159-4.311 0 0 1.368-.438 4.48 1.67 1.299-.361 2.693-.542 4.078-.548 1.383.006 2.777.187 4.078.548 3.11-2.108 4.475-1.67 4.475-1.67.889 2.243.33 3.899.162 4.311 1.044 1.139 1.675 2.593 1.675 4.371 0 6.258-3.809 7.635-7.438 8.038.585.503 1.106 1.497 1.106 3.017 0 2.177-.02 3.934-.02 4.468 0 .436.293.943 1.12.784 6.468-2.159 11.131-8.26 11.131-15.455 0-8.997-7.294-16.29-16.291-16.29"
+                    fill="#181717" transform="matrix(3.06946 0 0 3.14714 49.9954 100.406)" /></svg></a>
+            </div>
+            <p>An iOS app for remembering the theater performances you go see. Lets you write reviews, give ratings,
+              take pictures and more.</p>
+            <p class="stats">iOS • 2019</p>
+          </div>
+        </a></li>
+      <li class="portfolio-listing"><a href="https://bowdoinorient.com">
+          <picture style="min-height: 100%"><img src="https://files.jameslittle.me/images/tmp/orient-thumb.png" alt="">
+          </picture>
+          <div class="text">
+            <div style="display: flex; align-items: baseline; justify-content: space-between">
+              <h2>bowdoinorient.com <span class="ext-arrow">&nearr;</span></h2><a class="github-link"
+                href="https://github.com/bowdoinorient/bowpress"><svg clip-rule="evenodd" fill-rule="evenodd"
+                  stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 100 100"
+                  style="width: 1.6em; height: 1.6em" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="m0-31.904c-8.995 0-16.288 7.293-16.288 16.29 0 7.197 4.667 13.302 11.14 15.457.815.149 1.112-.354 1.112-.786 0-.386-.014-1.411-.022-2.77-4.531.984-5.487-2.184-5.487-2.184-.741-1.881-1.809-2.382-1.809-2.382-1.479-1.011.112-.991.112-.991 1.635.116 2.495 1.679 2.495 1.679 1.453 2.489 3.813 1.77 4.741 1.354.148-1.053.568-1.771 1.034-2.178-3.617-.411-7.42-1.809-7.42-8.051 0-1.778.635-3.232 1.677-4.371-.168-.412-.727-2.068.159-4.311 0 0 1.368-.438 4.48 1.67 1.299-.361 2.693-.542 4.078-.548 1.383.006 2.777.187 4.078.548 3.11-2.108 4.475-1.67 4.475-1.67.889 2.243.33 3.899.162 4.311 1.044 1.139 1.675 2.593 1.675 4.371 0 6.258-3.809 7.635-7.438 8.038.585.503 1.106 1.497 1.106 3.017 0 2.177-.02 3.934-.02 4.468 0 .436.293.943 1.12.784 6.468-2.159 11.131-8.26 11.131-15.455 0-8.997-7.294-16.29-16.291-16.29"
+                    fill="#181717" transform="matrix(3.06946 0 0 3.14714 49.9954 100.406)" /></svg></a>
+            </div>
+            <p>The website for Bowdoin College&#39;s student newspaper. I made a custom WordPress theme that brought the
+              Orient&#39;s web presence into the modern era.</p>
+            <p class="stats">Web • 2017–2019</p>
+          </div>
+        </a></li>
+      <li class="portfolio-listing"><a href="penguinegg/index.html">
+          <picture style="min-height: 100%"><img src="https://files.jameslittle.me/images/tmp/penguinegg-thumb.png"
+              alt=""></picture>
+          <div class="text">
+            <div style="display: flex; align-items: baseline; justify-content: space-between">
+              <h2>PenguinEgg: Encrypted Chat</h2>
+            </div>
+            <p>A real-time peer-to-peer encrypted online chat. Built with the goal of being as easy to use as Facebook
+              Messenger is and as secure as Facebook Messenger isn&#39;t.</p>
+            <p class="stats">Web • 2018</p>
+          </div>
+        </a></li>
+      <li class="portfolio-listing"><a href="https://bowdoinorient.com/housing">
+          <picture style="min-height: 100%"><img src="https://files.jameslittle.me/images/tmp/housing-thumb.png" alt="">
+          </picture>
+          <div class="text">
+            <div style="display: flex; align-items: baseline; justify-content: space-between">
+              <h2>Bowdoin Housing Quiz <span class="ext-arrow">&nearr;</span></h2><a class="github-link"
+                href="https://github.com/jameslittle230/2017-housing-map"><svg clip-rule="evenodd" fill-rule="evenodd"
+                  stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 100 100"
+                  style="width: 1.6em; height: 1.6em" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="m0-31.904c-8.995 0-16.288 7.293-16.288 16.29 0 7.197 4.667 13.302 11.14 15.457.815.149 1.112-.354 1.112-.786 0-.386-.014-1.411-.022-2.77-4.531.984-5.487-2.184-5.487-2.184-.741-1.881-1.809-2.382-1.809-2.382-1.479-1.011.112-.991.112-.991 1.635.116 2.495 1.679 2.495 1.679 1.453 2.489 3.813 1.77 4.741 1.354.148-1.053.568-1.771 1.034-2.178-3.617-.411-7.42-1.809-7.42-8.051 0-1.778.635-3.232 1.677-4.371-.168-.412-.727-2.068.159-4.311 0 0 1.368-.438 4.48 1.67 1.299-.361 2.693-.542 4.078-.548 1.383.006 2.777.187 4.078.548 3.11-2.108 4.475-1.67 4.475-1.67.889 2.243.33 3.899.162 4.311 1.044 1.139 1.675 2.593 1.675 4.371 0 6.258-3.809 7.635-7.438 8.038.585.503 1.106 1.497 1.106 3.017 0 2.177-.02 3.934-.02 4.468 0 .436.293.943 1.12.784 6.468-2.159 11.131-8.26 11.131-15.455 0-8.997-7.294-16.29-16.291-16.29"
+                    fill="#181717" transform="matrix(3.06946 0 0 3.14714 49.9954 100.406)" /></svg></a>
+            </div>
+            <p>An online quiz that uses interactive graphics to tell you where you can—and are likely to—live at Bowdoin
+              next year.</p>
+            <p class="stats">Web • Spring 2017</p>
+          </div>
+        </a></li>
+      <li class="portfolio-listing"><a href="logger/index.html">
+          <picture style="min-height: 100%"><img src="https://files.jameslittle.me/images/tmp/logger-thumb.png" alt="">
+          </picture>
+          <div class="text">
+            <div style="display: flex; align-items: baseline; justify-content: space-between">
+              <h2>RoboCup Logger App</h2>
+            </div>
+            <p>This app connects to an Aldebaran Nao robot and streams data from the robots&#39; two cameras to an
+              iPhone. The app decodes bitmap data to save and display the camera&#39;s view in real-time.</p>
+            <p class="stats">iOS • 2016</p>
+          </div>
+        </a></li>-->
+    </ul>
+    <h1>Other projects</h1>
+    <p>(that didn't deserve a whole writeup)</p>
+    <ul>
+      <li><a href="https://rothrotterlaster.com">A website for a pediatric practice in Brookline, MA, built with
+          Gatsby</a> (Summer 2019)</li>
+      <li><a href="https://directory.jameslittle.me">A Bowdoin Directory with live search and more information
+          displayed</a> (Fall 2018)</li>
+      <li><a href="https://files.jameslittle.me/projects/ait-graphics-final/index.html">A Marble Blast Gold clone built
+          with WebGL</a> (Spring 2018)</li>
+      <li><a href="https://github.com/jameslittle230/shortlink">A link shortening service that writes to a file instead
+          of using a database</a> (Spring 2018)</li>
+    </ul>
+  </main>
+  <section class="footbar">
+    <p title="And yes, that _does_ mean it took me two years to write a dang blog post.">Made by James Little between
+      2016 and 2020.</p>
+    <p><button class="link" id="dark-mode-switch"><span id="light-text">Switch to Dark Mode</span> <span
+          id="dark-text">Switch to Light Mode</span></button></p>
+    <script>function repaintButton() {
+        switch (jlGlobals.theme) {
+          case "light":
+            document.getElementById("dark-text").style.display = 'none'
+            document.getElementById("light-text").style.display = 'inline'
+            break;
+          case "dark":
+            document.getElementById("light-text").style.display = 'none'
+            document.getElementById("dark-text").style.display = 'inline'
+            break;
+        }
+      }
+
+      function switchTheme() {
+        switch (jlGlobals.theme) {
+          case "light":
+            localStorage.setItem('theme', 'dark');
+            break;
+          case "dark":
+            localStorage.setItem('theme', 'light');
+            break;
+        }
+
+        recomputeComputedValue()
+        repaintButton()
+      }
+
+      document.getElementById("dark-mode-switch").addEventListener("click", switchTheme)
+
+      repaintButton()</script>
+    <div class="links"><a href="https://twitter.com/jameslittle230">Twitter</a> <a
+        href="https://instagram.com/jameslittle230">Instagram</a> <a href="https://github.com/jameslittle230">Github</a>
+      <a href="https://linkedin.com/in/james-little-230">LinkedIn</a> <a
+        href="https://news.ycombinator.com/user?id=jil">Hacker News</a> <a href="https://lobste.rs/u/jil">Lobste.rs</a>
+      <a href="https://files.jameslittle.me/resume/JamesLittleFall2018.pdf">Résumé</a> <a
+        href="https://jameslittle.me/feed.xml">RSS&nbsp;Feed</a></div>
+  </section>
+  <script type="text/javascript">var _paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function () {
+      var u = "https://analytics.jameslittle.me/";
+      _paq.push(['setTrackerUrl', u + 'matomo.php']);
+      _paq.push(['setSiteId', '2']);
+      var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+      g.type = 'text/javascript'; g.async = true; g.defer = true; g.src = u + 'matomo.js'; s.parentNode.insertBefore(g, s);
+    })();</script>
+</body>
+
+</html>
