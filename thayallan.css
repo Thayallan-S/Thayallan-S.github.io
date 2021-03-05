@@ -6,11 +6,19 @@ html {
 body {
   background: transparent
 }
+
+a {
+  color: black;
+}
+
 .container {
   width: auto;
   max-width: 680px;
   padding: 0 15px;
   background: transparent;
+  position: absolute;
+  top: 10px;
+  left: 20px;
 }
 
 .regular-text{
